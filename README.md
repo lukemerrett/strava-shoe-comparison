@@ -19,14 +19,9 @@ Compare your running shoes' performance by analyzing Strava activities from the 
 
 ### 2. Install Dependencies
 
-Using uv (recommended):
+Using [uv](https://github.com/astral-sh/uv) (recommended):
 ```bash
 uv sync
-```
-
-Or using pip:
-```bash
-pip install requests
 ```
 
 ### 3. Configure Credentials

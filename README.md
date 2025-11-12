@@ -148,3 +148,60 @@ Activities without assigned gear will be grouped under "No Shoe Recorded".
 ## License
 
 This project is for personal use with your own Strava data.
+
+## AI Generation
+
+This program was developed using [Claude Code](https://www.claude.com/product/claude-code).
+
+Prompts used for reference:
+
+```
+Hey Claude, I'd like to build a python program that accesses the Strava API on my behalf and get's a list of Running activities I've done over the last 12 
+months.
+
+Then the python program should group the activities by which shoes I was wearing.
+
+Then I want to know the Average GAP (Grade Adjusted Pace) for each shoe
+
+Please document how you will achieve this in a markdown SPEC.md file, then build this program.
+
+If there's any details or clarifications you need from me please just pause and ask. I expect at some point you will need my credentials or an API key, please ask 
+for it, if an API key please provide instructions on how I can get it. 
+```
+
+```
+# The Strava API doesn't provide GAP, Claude asked how I would like to proceed:
+
+Use average pace and also calculate for me an estimated GAP, then give me both in the results per shoe
+```
+
+```
+Change requirements.txt to a uv setup https://github.com/astral-sh/uv 
+```
+
+```
+Please update the project (code and documentation) so we output these details for each shoe:
+
+- Average Pace over all runs
+- Average GAP over all runs
+- Average Pace over all runs not tagged with Race
+- Average GAP over all runs not tagged with Race 
+```
+
+```
+Great thank you.
+
+Please prepare this as a GitHub repo with a Python .gitignore file, ensuring the .env file is also ignored.
+
+Please include an MIT licence
+
+Please then push to this repo https://github.com/lukemerrett/strava-shoe-comparison 
+```
+
+```
+Remove `Or using pip:` from the README.
+
+Change `Using uv (recommended):` so `uv` is a markdown link to the uv repository I gave you earlier
+
+Commit and push these changes 
+```
